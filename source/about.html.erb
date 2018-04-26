@@ -3,22 +3,86 @@ title: Le Wagon - Middleman - About
 ---
 
 <div id="about">
-  <div class="about-content">
-    <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
-    <ul class="list-inline">
+
+
+
+  <div>
+    <h1 style="padding-top: 80px;">Web Developer and Business Communication Expert</h1>
+    <ul class="list-inline" style="padding-top: 30px">
       <% data.users.each do |user| %>
         <li>
           <% link_to "https://kitt.lewagon.com/alumni/#{user.github_nickname}", target: "_blank" do %>
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle" %>
+            <%= image_tag "fgaivao.jpeg", class: "img-circle"%>
           <% end %>
           <h2><%= user.name %></h2>
           <p>
-            <% link_to "https://github.com/#{user.github_nickname}", target: "_blank" do %>
-              <i class="fa fa-github"></i> <%= user.github_nickname %>
+
+              <i class="fab fa-github"></i> <%= link_to user.github_nickname, "https://github.com/Fgaivao" %>
             <% end %>
           </p>
         </li>
-      <% end %>
-    </ul>
+        <br>
+
+        <div class="btn-group" style="padding-top: 30px">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Check this out!
+  </button>
+  <div class="dropdown-menu" style="padding-left: 30px;">
+    <a class="dropdown-item1" href="#santini">Santini</a> <br>
+
+    <a class="dropdown-item2" href="#albatroz">Albatroz</a> <br>
+    <a class="dropdown-item3" href="#iscem">ISCEM</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item4" href="#le-wagon">Le Wagon</a> <br>
+    <a class="dropdown-item5" href="#contacts">Contacts</a>
   </div>
 </div>
+
+ <div class="card-box">
+    <h1 style="padding-top: 20px">First let me tell you a bit about myself</h1>
+    <p class="santini-text" style="text-align: center; padding: 70px; background-color: white;"> So by now you already should know my name... <br> Let's start: <br> </p>
+
+
+
+  </div>
+  <div class="card-box" id="santini">
+    <h1 style="padding-top: 20px">Santini</h1>
+    <p class="santini-text" style="text-align: center; padding: 70px; background-color: white;"> A simple summer job that taught me that nothing is easy and every type of work requires dedication and interest. <br> Working with the public gave me the sensitivity needed to understand people. </p>
+  </div>
+  <div class="card-box" id="albatroz" style="background-color: rgb(66, 85, 97);">
+    <h2 style="padding-top: 20px; background-color: rgb(66, 85, 97); padding:30px; color: white; font-size: 25px">Albatroz</h2>
+    <p class="santini-text" style="text-align: center; padding: 70px; background-color: white;">Here I worked as a receptionist, worked parking cars and also as a handy man. <br> It was a great experience that taught me all that I know about working with a team because we had to know always what the other workers were doing.</p>
+  </div>
+  <div class="card-box" id="iscem" style="background-color: rgb(120, 181, 59);">
+    <h1 style="background-color: rgb(120, 181, 59); padding:30px; padding-bottom: 0px; color: white; font-size: 25px">ISCEM</h1>
+    <p class="santini-text" style="text-align: center; padding: 70px; background-color: white;"> After sometime working I decided it was time to get back to school and enter this business communication college.<br> I learned a lot about companys and how they could evolve a lot with a simple but strict communication plan.<br> Also made two internships in S.L.Benfica and RFF & Associados, where I could live and feel a true working experience. </p>
+  </div>
+
+  <div class="card-box" id="le-wagon">
+    <h1 style="background-color: rgb(209, 10, 22); padding:30px; color: white; font-size: 25px"">LE WAGON <%= image_tag "logo2.png", id: 'lewagon'%></h1>
+    <p class="santini-text" style="text-align: center; padding: 20px; background-color: white;"> I decided that a college degree wasn't enought and then I found programming, something that I instantly loved but wasn't able to learn alone, God knows I tried. <br> I found Le Wagon where I became a Full-Stack developer, learned Ruby on Rails, Javascript, HTML5, SASS, SQL, Git and met a lot of great people. </p>
+
+  </div>
+
+  <div class="card-box" id="contacts">
+    <h3 style="padding-top: 20px">I'm available for freelance or full time work</h3>
+    <ul style="list-style-type: none;">
+      <li>
+        <i class="far fa-envelope" style="color: red; font-size: 50px; padding-top: 20px;"></i><p style="padding-top: 50px"> francisco.abecassis.gaivao@gmail.com </p>
+
+
+
+      </li>
+      <li>
+      <i class="fas fa-phone" style="color: red; font-size: 50px; padding-top: 20px;"></i> <p style="padding-top: 50px"> 91 241 73 72</p>
+      </li>
+    </ul>
+  </div>
+    </ul>
+<button onclick="topFunction()" class="btn btn-danger" id="myBtn" title="Go to top" style="margin-bottom: 50px;">Back to Top</button>
+    </div>
+
+</div>
+
+
+

@@ -1,5 +1,5 @@
 #about {
-  height: 100vh;
+
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -27,7 +27,18 @@
     letter-spacing: -0.5px;
     font-size: 15px;
   }
+  h4{
+    color: rgba(0,0,0,0.4);
+  }
   .fa-heart {
     color: #D23333;
   }
+
+ #lewagon{
+    width: 120px;
+    height: 120px;
+    background-color: #D23333;
+    border-radius: 50%;
+    padding: 7px;
+ }
 }

@@ -1,5 +1,5 @@
 #home {
-  background-color: #D23333;
+  background-color: rgb(244, 230, 231);
   color: white;
   height: 100vh;
   display: flex;
@@ -8,10 +8,14 @@
   text-align: center;
   p {
     margin-top: 1.5em;
+    color: rgba(0,0,0,0.4);
   }
   a {
     color: rgba(0,0,0,0.4);
     font-weight: bold;
     font-size: 16px;
+  }
+  h3{
+    color: rgba(0,0,0,0.4);
   }
 }
